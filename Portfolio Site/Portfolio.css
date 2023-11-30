@@ -7,6 +7,7 @@
 #Section1 {
     height: 1000px;
     background-color: orange;
+
 }
 
 .Navigation {
@@ -73,6 +74,7 @@
     font-family: "Arial Rounded MT Bold", sans-serif;
     align-items: baseline;
     font-size: 20px;
+
 }
 #ulNavigation li {
     margin-right: 15px;
@@ -122,12 +124,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 #NameHeaderTxt{
     padding-top: 10vw;
     padding-bottom: 20px;
-    font-size: 60px;
+    font-size: clamp(30px,8vw, 60px);
     text-align: center;
 
     color: white;
@@ -136,11 +140,15 @@
     height: 80%;
 }
 #InfoHeaderTxt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 20px;
     text-align: center;
     padding-right: 20vw;
     padding-left: 20vw;
-    font-size: 80px;
+    font-size: clamp(40px,10vw, 80px);
     color: white;
     background-color: black;
     width: 80%;
@@ -153,7 +161,7 @@
 #InfoText{
     text-align: center;
     padding-bottom: 10vw;
-    font-size: 20px;
+    font-size: clamp(10px,4vw, 20px);
     color: white;
     background-color: black;
     width: 80%;
