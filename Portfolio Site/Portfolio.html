@@ -9,43 +9,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<section class="Navigation">
+    <div id="LucaHeader">
+        <div id="divLogo">
+            <img id="Logo" src="../Assets/LucaLogoWhite.jpg " alt="lucaWh">
+        </div>
+    </div>
+    <div  id="NavigationBar">
+        <div class="NavList" id="LeftSide">
+            <a href="#"><img id="Logo2" src="../Assets/LucaLogo.jpg" alt="Luca"></a>
+            <div class="divider"></div>
+            <ul id="ulNavigation">
+                <li><a href="#sectionCV">CV</a></li>
+                <li><a href="#sectionProjects">Projects</a></li>
+                <li><a href="#sectionMotivation">Motivation</a></li>
+                <li><a href="#sectionIdeas">Ideas</a></li>
+            </ul>
+            <div id="more-menu">
+                <ul id="more-menu-list">
+                    <li>
+                        More
+                        <ul id="menu-list">
+                            <li><a href="#sectionCV">CV</a></li>
+                            <li><a href="#sectionProjects">Projects</a></li>
+                            <li><a href="#sectionMotivation">Motivation</a></li>
+                            <li><a href="#sectionIdeas">Ideas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="RightSide">
+            <a href="#"><i class="fa-solid fa-phone fa-xl"></i></a>
+
+        </div>
+    </div>
 <section id="SectionHome">
     <div class="Navigation" >
-        <div id="LucaHeader">
-            <div id="divLogo">
-                <img id="Logo" src="../Assets/LucaLogoWhite.jpg " alt="lucaWh">
-            </div>
-        </div>
-        <div  id="NavigationBar">
-            <div class="NavList" id="LeftSide">
-                <a href="#"><img id="Logo2" src="../Assets/LucaLogo.jpg" alt="Luca"></a>
-                <div class="divider"></div>
-                <ul id="ulNavigation">
-                    <li><a href="#sectionCV">CV</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Motivation</a></li>
-                    <li><a href="#">Ideas</a></li>
-                </ul>
-                <div id="more-menu">
-                    <ul id="more-menu-list">
-                        <li>
-                            <a href="#">More</a>
-                            <ul id="menu-list">
-                                <li><a href="#">CV</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Motivation</a></li>
-                                <li><a href="#">Ideas</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div id="RightSide">
-                <a href="#"><i class="fa-solid fa-phone fa-xl"></i></a>
-
-            </div>
-        </div>
         <div id="Introduction">
                 <div id="IntroText">
                     <H1 id="NameHeaderTxt">Hello, I'm Luca</H1>
@@ -107,19 +109,27 @@
 
 </section>
 <section id="sectionProjects">
-    <div class="projectbox" id="cookieclicker">
-        <header><a href="https://github.com/IceFlopper/Cookie-Clicker">Cookie Clicker</a></header>
+    <div id="projdiv">
+        <div class="projectbox" id="cookieclicker">
+            <header><a href="https://github.com/IceFlopper/Cookie-Clicker">Cookie Clicker</a></header>
+        </div>
+        <div class="projectbox" id="portfolio">
+            <header><a href="https://github.com/IceFlopper/Portfolio">Portfolio</a></header>
+
+        </div>
+        <div class="projectbox" id="sonysite">
+            <header><a href="https://github.com/IceFlopper/SonySite">SonySite</a></header>
+
+        </div>
     </div>
-    <div class="projectbox" id="portfolio">
-    </div>
-    <div class="projectbox" id="sonysite">
-    </div>
+
 </section>
 <section id="sectionMotivation">
 
 </section>
 <section id="sectionIdeas">
 
+</section>
 </section>
 
 </body>
