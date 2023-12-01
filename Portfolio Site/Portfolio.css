@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+*, html {
+
+    scroll-behavior: smooth !important;
+}
 
 #NavigationBar a {
     text-decoration: none;
@@ -20,9 +24,10 @@
 
 
 
-#Section1 {
+#SectionHome {
     height: auto    ;
     background-color: orange;
+
 
 }
 
@@ -104,26 +109,31 @@
 }
 #menu-list{
     list-style: none;
-    display: none; /* Hide the submenu by default */
-    padding: 10px; /* Add some indentation for the submenu */
+    display: none;
+    padding: 10px;
 
 }
 #more-menu-list:hover #menu-list {
-    display: flex; /* Show the submenu on hover */
+    display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: white; /* Adjust background color as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
 }
 #more-menu {
-    cursor: pointer; /* Change cursor on hover for better user feedback */
+    cursor: pointer;
 
 }
 #ulNavigation li {
     margin-right: 15px;
 }
+#ulNavigation a{
+    scroll-behavior: smooth;
+
+}
+
 
 @media screen and (max-width: 280px) {
     #ulNavigation li:not(:nth-child(0)) {display: none;}
@@ -241,6 +251,106 @@
     background-color: black;
     width: 80%;
     height: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
+#sectionCV{
+    display: flex;
+    height: auto;
+    background: black;
+    flex-direction: column;
+
+}
+#image-header{
+    display: flex;
+    flex-direction: row;
+}
+#image-header header{
+
+    color: white;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 50px;
+    margin: 50px 50px 10px 50px;
+
+}
+#image-header h2{
+    color: white;
+    font-family: "Arial Rounded MT", sans-serif;
+    font-size: 30px;
+    margin: 10px 50px 10px 50px;
+}
+#image-header h4{
+    color: white;
+    font-family: "Arial Rounded MT", sans-serif;
+    margin: 50px 50px 10px 50px;
+}
+#selfie{
+    margin-top: 50px;
+    margin-left: 50px;
+
+    width: 300px;
+    height: fit-content;
+}
+
+#cvsets{
+    display: flex;
+    color: white;
+    font-family: "Arial Rounded MT", sans-serif;
+    margin: 20px;
+    flex-direction: column;
+}
+.cvdiv{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+}
+.cvdiv header{
+    font-size: 40px;
+}
+#education{
+
+
+}
+#languages{
+    justify-self: flex-end;
+
+}
+#skills{
+
+}
+#experience{
+ justify-self: flex-end;
+
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px){
+    #image-header{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #selfie{
+        margin-left: 0;
+    }
+    .box{
+        flex-direction: column ;
+    }
+}
+#sectionProjects{
+    display: flex;
+    height: auto;
+    background: black;
+    flex-direction: column;
+    color: white;
+    font-family: "Arial Rounded MT", sans-serif;
+}
+.projectbox a{
+    width: 100%;
+}
