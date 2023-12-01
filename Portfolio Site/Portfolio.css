@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 
-a {
+#NavigationBar a {
     text-decoration: none;
-}
-
-a:visited {
     color: black;
 }
-a:hover {
-    color: #35383d;
+
+#NavigationBar a:visited {
+    color: black;
 }
+#NavigationBar a:hover {
+    color: #0da89e;
+    transition: 0.3s ease;
+
+}
+
 
 
 #Section1 {
-    height: 1000px;
+    height: auto    ;
     background-color: orange;
 
 }
@@ -88,12 +92,53 @@ a:hover {
     font-size: 20px;
 
 }
+#more-menu-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    justify-content: space-evenly;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+#menu-list{
+    list-style: none;
+    display: none; /* Hide the submenu by default */
+    padding: 10px; /* Add some indentation for the submenu */
+
+}
+#more-menu-list:hover #menu-list {
+    display: flex; /* Show the submenu on hover */
+    flex-direction: column;
+    position: absolute;
+    background-color: white; /* Adjust background color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+
+}
+#more-menu {
+    cursor: pointer; /* Change cursor on hover for better user feedback */
+
+}
 #ulNavigation li {
     margin-right: 15px;
 }
 
-@media screen and (max-width: 240px) {
-    .NavList li:not(:nth-child(0)) {display: none;}
+@media screen and (max-width: 280px) {
+    #ulNavigation li:not(:nth-child(0)) {display: none;}
+    #menu-list li {display: flex !important;}
+
+
+    .NavList li.icon {
+        float: right;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 380px) {
+    #ulNavigation li:not(:nth-child(1)) {display: none;}
+    #menu-list li:nth-child(2) {display: flex !important;}
 
 
     .NavList li.icon {
@@ -101,32 +146,22 @@ a:hover {
         display: block;
     }
 }
-@media screen and (max-width: 330px) {
-    .NavList li:not(:nth-child(1)) {display: none;}
 
-
-    .NavList li.icon {
-        float: right;
-        display: block;
-    }
-}
 @media screen and (max-width: 500px) {
-    .NavList li:not(:nth-child(1),:nth-child(2)) {display: none;}
-
-
-    .NavList li.icon {
+    #ulNavigation li:not(:nth-child(1),:nth-child(2)) {display: none !important;}
+    #menu-list li:nth-child(1),
+    #menu-list li:nth-child(2) {
+        display: none;
+    }    .NavList li.icon {
         float: right;
         display: block;
     }
 }
-@media screen and (max-width: 600px) {
-    .NavList li:not(:nth-child(1),:nth-child(2), :nth-child(3)) {display: none;}
 
 
-    .NavList li.icon {
-        float: right;
-        display: block;
-    }
+@media screen and (min-width: 501px){
+    #more-menu{display: none}
+
 }
 
 .divider {
@@ -136,6 +171,7 @@ a:hover {
     margin-left: 10px;
     margin-right: 20px;
 }
+
 .fa-phone{
         margin-right: 20px;
 }
@@ -152,6 +188,7 @@ a:hover {
     background-image: url("../Assets/CodeIMG.jpg ");
     background-size: cover;
     overflow: hidden;
+    ;
 
 
 }
@@ -199,7 +236,7 @@ a:hover {
 #InfoText{
     text-align: center;
     padding-bottom: 10vw;
-    font-size: clamp(10px,4vw, 20px);
+    font-size: clamp(10px,3vw, 20px);
     color: white;
     background-color: black;
     width: 80%;
