@@ -6,11 +6,13 @@
 *, html {
 
     scroll-behavior: smooth !important;
+    scroll-margin: 70px;
 }
 
 #NavigationBar a {
     text-decoration: none;
     color: black;
+
 }
 
 #NavigationBar a:visited {
@@ -85,6 +87,16 @@
     justify-content: flex-end;
 
 }
+#RightSide header{
+    padding-right: 10px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+
+}
+#RightSide a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #Logo2 {
     height: auto;
@@ -107,7 +119,6 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
-
     justify-content: space-evenly;
     font-family: "Arial Rounded MT Bold", sans-serif;
     text-align: left;
@@ -116,8 +127,7 @@
 #menu-list{
     list-style: none;
     display: none;
-    margin-top: 25px;
-    padding: 10px 10px 10px 10px;
+    padding: 25px 10px 10px 10px;
 
 }
 #more-menu-list:hover #menu-list {
@@ -142,7 +152,7 @@
 }
 
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 330px) {
     #ulNavigation li:not(:nth-child(0)) {display: none;}
     #menu-list li {display: flex !important;}
 
@@ -153,7 +163,7 @@
     }
 
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
     #ulNavigation li:not(:nth-child(1)) {display: none;}
     #menu-list li:nth-child(2) {display: flex !important;}
 
@@ -164,7 +174,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
     #ulNavigation li:not(:nth-child(1),:nth-child(2)) {display: none !important;}
     #menu-list li:nth-child(1),
     #menu-list li:nth-child(2) {
@@ -176,7 +186,7 @@
 }
 
 
-@media screen and (min-width: 501px){
+@media screen and (min-width: 531px){
     #more-menu{display: none}
 
 }
@@ -205,7 +215,6 @@
     background-image: url("../Assets/CodeIMG.jpg ");
     background-size: cover;
     overflow: hidden;
-    ;
 
 
 }
@@ -230,6 +239,7 @@
     background-color: black;
     width: 80%;
     height: 80%;
+
 }
 #InfoHeaderTxt{
     display: flex;
@@ -246,6 +256,7 @@
     width: 80%;
     height: 80%;
     mix-blend-mode: multiply;
+
 
 
 }
@@ -310,27 +321,63 @@
 }
 .cvdiv{
     display: flex;
-    margin: 20px;
+    flex-direction: column;
+
+    margin: 10px 10px 10px 10px;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 10px;
 }
 .cvdiv header{
     font-size: 40px;
 }
 #education{
 
+}
+#education h4{
+    margin: 16px 4px 7px 20px;
+    font-family: Arial, sans-serif;
+}
+#education h3{
+    margin: 18px 5px 1px 7px;
+    font-family: Arial, sans-serif;
 
 }
 #languages{
     justify-self: flex-end;
 
 }
+#languages h4{
+    margin: 10px 4px 7px 20px;
+    font-family: Arial, sans-serif;
+}
+#languages h3{
+    margin: 18px 5px 1px 7px;
+    font-family: Arial, sans-serif;
+}
 #skills{
 
+}
+#skills h4{
+    margin: 10px 4px 7px 20px;
+    font-family: Arial, sans-serif;
+}
+#skills h3{
+    margin: 18px 5px 1px 7px;
+    font-family: Arial, sans-serif;
 }
 #experience{
  justify-self: flex-end;
 
+}
+#experience h4{
+    margin: 10px 4px 7px 20px;
+    font-family: Arial, sans-serif;
+}
+#experience h3{
+    margin: 18px 5px 1px 7px;
+    font-family: Arial, sans-serif;
 }
 .box{
     display: flex;
@@ -343,32 +390,109 @@
     height: auto;
     background: orange;
     flex-direction: column;
-    color: white;
+    color: black;
     font-family: "Arial Rounded MT", sans-serif;
     font-size: 50px;
-}
-#projdiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
 
 }
-.projectbox{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+#projHeader{
+    justify-content: flex-start;
+    align-items: center;
     margin: 50px 50px 50px 50px;
 
 }
+#projdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.projectbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 530px;
+    margin: 50px 10px 50px 10px;
+    background: black;
+    padding: 20px;
+    border-radius: 40px;
+    overflow: clip;
+}
 .projectbox a{
     width: 100%;
-    color: black;
+    color: orange;
     text-decoration: none;
 }
 .projectbox a:hover{
     color: dimgray;
+}
+#cookieclicker{
+
+}
+#portfolio{
+    display: none;
+}
+#sonysite{
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.prev{
+
+}
+.next{
+
+}
+.prev:hover {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 0px 10px 10px 0px;
+    color: orange;
+}
+.next:hover{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10px 0px 0px 10px;
+    color: orange;
+}
+#dots{
+    margin-top: -60px;
+    padding: 2px 20px 15px 20px;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 @media screen and (max-width: 800px){
     #image-header{

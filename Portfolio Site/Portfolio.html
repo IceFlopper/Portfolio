@@ -7,7 +7,9 @@
     <link href="Portfolio.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/64bfad8fdd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Portfolio.js"></script>
 </head>
+
 <body>
 <section class="Navigation">
     <div id="LucaHeader">
@@ -30,7 +32,7 @@
                     <li>
                         More
                         <ul id="menu-list">
-                            <li><a href="#sectionCV">CV</a></li>
+                            <li><a class="sectionCVbehaviour" href="#sectionCV">CV</a></li>
                             <li><a href="#sectionProjects">Projects</a></li>
                             <li><a href="#sectionMotivation">Motivation</a></li>
                             <li><a href="#sectionIdeas">Ideas</a></li>
@@ -41,7 +43,8 @@
         </div>
 
         <div id="RightSide">
-            <a href="#"><i class="fa-solid fa-phone fa-xl"></i></a>
+            <a href="#"><header>Contact</header>
+            <i class="fa-solid fa-phone fa-xl"></i></a>
 
         </div>
     </div>
@@ -82,25 +85,55 @@
         <div class="box">
             <div  class="cvdiv" id="education">
                 <header>Education <i class="fa-solid fa-graduation-cap"></i></header>
-
+                <h3>Current/Future:</h3>
+                <h4>PXL Highschool -</h4>
+                <h4>2023-Present Graduate Programming</h4>
+                <h3>Past:</h3>
+                <h4>Campus De Helix -</h4>
+                <h4>2018-2022 Industrial Electrical Installations</h4>
+                <h4>2015-2018 Household Electrical Installations</h4>
 
 
             </div>
             <div  class="cvdiv" id="languages">
                 <header>Languages <i class="fa-solid fa-globe"></i></header>
+                <h3>Standard:</h3>
+                <h4>English - Advanced</h4>
+                <h4>Dutch - Mother Tongue</h4>
+                <h4>German - Basic</h4>
 
+                <h3>Computer:</h3>
+                <h4>C# - Basic</h4>
+                <h4>HTML/CSS - Basic</h4>
+                <h4>SQL - Basic</h4>
 
             </div>
         </div>
         <div class="box">
             <div  class="cvdiv" id="skills">
                 <header>Skills <i class="fa-solid fa-book"></i></header>
+                <h3>Online:</h3>
+                <h4>Quick Understanding of Interfaces</h4>
+                <h4>Quick Grasp of New Concepts </h4>
+                <h4>Understanding of Systems</h4>
+
+                <h3>Real World:</h3>
+                <h4>Friendly</h4>
+                <h4>Good Time Management</h4>
+                <h4>Understanding of Customer Needs and Wants</h4>
 
 
             </div>
             <div  class="cvdiv" id="experience">
                 <header>Experience <i class="fa-solid fa-wand-magic-sparkles"></i></header>
+                <h3>Online:</h3>
+                <h4>I have extensive experience with a diverse array of tools, including Excel, Word, PowerPoint, and various online platforms</h4>
+                <h4>Avid Troubleshooter</h4>
+                <h4>Experience in adept online research</h4>
 
+                <h3>Real World:</h3>
+                <h4>CKS Electronics - I served as an order picker while concurrently implementing corrective measures to optimize the database for the company's storage facility</h4>
+                <h4>AEW Kalders - Installation of various electrical systems, including Solar Panels, Batteries, Automated Household Systems and more</h4>
 
             </div>
         </div>
@@ -108,22 +141,32 @@
     </div>
 
 </section>
-<section id="sectionProjects">
-    <div id="projdiv">
-        <div class="projectbox" id="cookieclicker">
-            <header><a href="https://github.com/IceFlopper/Cookie-Clicker">Cookie Clicker</a></header>
+    <section id="sectionProjects">
+        <div id="projHeader">
+            <header>Projects</header>
+            <h5>Some of my main current projects</h5>
         </div>
-        <div class="projectbox" id="portfolio">
-            <header><a href="https://github.com/IceFlopper/Portfolio">Portfolio</a></header>
+        <div id="projdiv">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
+            <div class="projectbox mySlides" id="cookieclicker">
+                <header><a href="https://github.com/IceFlopper/Cookie-Clicker">Cookie Clicker</a></header>
+            </div>
+            <div class="projectbox mySlides" id="portfolio">
+                <header><a href="https://github.com/IceFlopper/Portfolio">Portfolio</a></header>
+            </div>
+            <div class="projectbox mySlides" id="sonysite">
+                <header><a href="https://github.com/IceFlopper/SonySite">SonySite</a></header>
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="projectbox" id="sonysite">
-            <header><a href="https://github.com/IceFlopper/SonySite">SonySite</a></header>
-
+        <div id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </div>
+    </section>
 
-</section>
 <section id="sectionMotivation">
 
 </section>
