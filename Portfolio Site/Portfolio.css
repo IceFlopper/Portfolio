@@ -9,6 +9,31 @@
     scroll-margin: 70px;
 }
 
+
+
+.Navigation {
+    height: auto;
+    background-color: black;
+    width: auto;
+    overflow: clip;
+}
+.linksize{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.divider {
+
+    height: 45px;
+    border-right: 1px solid black;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.fa-phone{
+    margin-right: 20px;
+}
 #NavigationBar a {
 
     text-decoration: none;
@@ -45,12 +70,6 @@
 
 }
 
-.Navigation {
-    height: auto;
-    background-color: black;
-    width: auto;
-    overflow: clip;
-}
 
 #LucaHeader {
     display: flex;
@@ -90,12 +109,7 @@
     align-items: center;
     text-align: center;
 }
-.linksize{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    justify-content: center;
-    text-align: center;
-}
+
 #ulNavigation {
     display: flex;
     flex-direction: row;
@@ -191,7 +205,7 @@
 }
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 270px) {
     #ulNavigation li:not(:nth-child(0)) {display: none;}
     #menu-list li {display: flex !important;}
 
@@ -203,7 +217,7 @@
 
 
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 360px) {
     #ulNavigation li:not(:nth-child(1)) {display: none;}
     #menu-list li:nth-child(2) {display: flex !important;}
 
@@ -214,7 +228,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 500px) {
     #ulNavigation li:not(:nth-child(1),:nth-child(2)) {display: none !important;}
     #menu-list li:nth-child(1),
     #menu-list li:nth-child(2) {
@@ -226,22 +240,12 @@
 }
 
 
-@media screen and (min-width: 531px){
+@media screen and (min-width: 501px){
     #more-menu{display: none}
 
 }
 
-.divider {
 
-    height: 45px;
-    border-right: 1px solid black;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-.fa-phone{
-        margin-right: 20px;
-}
 #Introduction{
     display: flex;
     height: 800px;
@@ -350,9 +354,18 @@
 
     width: 300px;
     height: fit-content;
-    border-radius: 10px;
-}
+    border-radius: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+#selfie:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px 3px rebeccapurple;
+}
+#selfie:active {
+    box-shadow: 0 0 0 3px white; /* Modify the box-shadow to create a thicker border on hover and click */
+}
 #cvsets{
     display: flex;
     color: white;
@@ -551,6 +564,36 @@
         flex-direction: column ;
     }
 }
+#sectionMotivation{
+    display: flex;
+    height: 800px;
+    background: black;
+    flex-direction: column;
+    color: white;
+    font-family: "Arial MT", sans-serif;
+    font-size: 50px;
+}
+#motivationHeader{
+    font-size: 40px;
+    margin: 20px;
+}
+#motivationText{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#sectionIdeas{
+    display: flex;
+    height: 800px;
+    background: rebeccapurple;
+    flex-direction: column;
+    color: white;
+    font-family: "Arial MT", sans-serif;
+    font-size: 50px;
+}
+#ideasheader{
+    margin: 20px;
+}
 #sectionForm{
     display: flex;
     height: 800px;
@@ -558,7 +601,7 @@
     align-items: center;
     color: white;
     font-family: "Arial MT", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     background-color: black;
 }
 #sectionForm form{
@@ -611,4 +654,20 @@
 }
 .formdiv{
     width: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-color: white;
+    height: 50px;
+}
+#copyright{
+
+}
+#additionalinfo{
+
 }
