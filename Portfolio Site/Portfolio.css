@@ -364,7 +364,7 @@
     box-shadow: 0 0 20px 3px rebeccapurple;
 }
 #selfie:active {
-    box-shadow: 0 0 0 3px white; /* Modify the box-shadow to create a thicker border on hover and click */
+    box-shadow: 0 0 0 3px white;
 }
 #cvsets{
     display: flex;
@@ -469,24 +469,55 @@
 .projectbox{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 530px;
-    margin: 50px 10px 50px 10px;
+    height: fit-content;
+    margin: 50px 10px 10px 10px;
     background: black;
     padding: 20px;
     border-radius: 40px;
     overflow: clip;
-    font-size: clamp(41px, 5vw, 55px);
+    font-size: clamp(31px, 5vw, 55px);
+    transition:  0.3s ease, box-shadow 0.3s ease;
 }
 .projectbox a{
-    width: 100%;
     color: orange;
     text-decoration: none;
+    transition:  0.3s ease, box-shadow 0.3s ease;
+
 }
 .projectbox a:hover{
     color: dimgray;
+    transition:  0.3s ease, box-shadow 0.3s ease;
+
 }
+
 #cookieclicker{
+
+}
+.projdivheader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.projdivheader h4{
+    font-size: clamp(11px, 3vw, 25px);
+    color: white;
+}
+.projectbox img{
+    height: auto;
+    width: clamp(550px, 60vw, 1000px);
+    border-radius: 2vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+
+}
+.projectbox img:hover{
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7); /* Adjust the color and transparency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 #portfolio{
@@ -497,9 +528,7 @@
 }
 .prev, .next {
     cursor: pointer;
-    top: 50%;
     width: auto;
-    margin-top: -22px;
     color: black;
     font-weight: bold;
     padding: 16px;
@@ -507,7 +536,6 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-
 }
 .prev{
 
@@ -526,10 +554,16 @@
     color: orange;
 }
 #dots{
-    margin-top: -60px;
-    padding: 2px 20px 15px 20px;
+    padding: 2px 20px 22px 20px;
     text-align: center;
 }
+#interactive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -546,6 +580,27 @@
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 950px)
+{
+    .projectbox{
+        flex-direction: column;
+        justify-content: center ;
+    }
+    #cookieclicker img{
+        width: clamp(220px, 75vw, 800px);
+
+    }
+}
+
+
+@media screen and   (max-width: 550px)
+{
+    #cookieclicker img{
+        width: clamp(220px, 65vw, 800px);
+
+    }
 }
 @keyframes fade {
     from {opacity: .4}
@@ -570,7 +625,7 @@
     background: black;
     flex-direction: column;
     color: white;
-    font-family: "Arial MT", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 50px;
 }
 #motivationHeader{
@@ -607,13 +662,13 @@
 #sectionForm form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     padding: 50px;
 }
 #formInfo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 #formdiv label,input{
 }
@@ -664,6 +719,7 @@ footer{
     color: black;
     background-color: white;
     height: 50px;
+    font-family: Arial, sans-serif;
 }
 #copyright{
 
