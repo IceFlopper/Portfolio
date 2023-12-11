@@ -467,7 +467,7 @@
 }
 
 .projectbox{
-    display: flex;
+    display: flex ;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -513,10 +513,11 @@
     border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7); /* Adjust the color and transparency */
 
 }
 .projectbox img:hover{
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7); /* Adjust the color and transparency */
+    transform: scale(1,03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -575,7 +576,7 @@
     transition: background-color 0.6s ease;
 }
 .dot.active, .dot:hover {
-    background-color: #717171;
+    background-color: #707070;
 }
 .fade {
     animation-name: fade;
@@ -585,6 +586,7 @@
 @media screen and (max-width: 950px)
 {
     .projectbox{
+        display: flex;
         flex-direction: column;
         justify-content: center ;
     }
