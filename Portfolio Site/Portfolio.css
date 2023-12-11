@@ -250,7 +250,7 @@
     display: flex;
     height: 800px;
     background-color: black;
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial Rounded MT Bold", sans-serif;
     justify-content: center;
     align-items: center;
@@ -279,7 +279,7 @@
     font-size: clamp(30px,8vw, 60px);
     text-align: center;
 
-    color: white;
+    color: #dbdbdb;
     background-color: black;
     width: 80%;
     height: 80%;
@@ -295,7 +295,7 @@
     padding-right: 20vw;
     padding-left: 20vw;
     font-size: clamp(40px,10vw, 80px);
-    color: white;
+    color: #dbdbdb;
     background-color: black;
     width: 80%;
     height: 80%;
@@ -309,7 +309,7 @@
     text-align: center;
     padding-bottom: 10vw;
     font-size: clamp(10px,3vw, 20px);
-    color: white;
+    color: #dbdbdb;
     background-color: black;
     width: 80%;
     height: 80%;
@@ -331,20 +331,20 @@
 }
 #image-header header{
 
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-size: 50px;
     margin: 50px 50px 10px 50px;
 
 }
 #image-header h2{
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial Rounded MT", sans-serif;
     font-size: 30px;
     margin: 10px 50px 10px 50px;
 }
 #image-header h4{
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial Rounded MT", sans-serif;
     margin: 50px 50px 10px 50px;
 }
@@ -368,7 +368,7 @@
 }
 #cvsets{
     display: flex;
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial Rounded MT", sans-serif;
     margin: 20px;
     flex-direction: column;
@@ -385,6 +385,15 @@
 }
 .cvdiv header{
     font-size: 40px;
+}
+.cvdiv a{
+    color: white;
+}
+.cvdiv a:hover{
+    color: #0da89e;
+}
+.cvdiv a:active{
+    color: #508f83;
 }
 #education{
 
@@ -442,7 +451,7 @@
 #sectionProjects{
     display: flex;
     height: auto;
-    background: orange;
+    background: linear-gradient(#edaf53, #c77c20);
     flex-direction: column;
     color: black;
     font-family: "Arial Rounded MT", sans-serif;
@@ -452,7 +461,7 @@
 #projHeader{
     justify-content: flex-start;
     align-items: center;
-    margin: 12px 50px 20px 50px;
+    margin: 12px 50px 0 50px;
     font-size: clamp(41px, 5vw, 55px);
 
 
@@ -472,13 +481,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
-    margin: 50px 10px 10px 10px;
+    min-height: 600px;
+
+    margin: 38px 10px 10px 10px;
     background: black;
     padding: 20px;
     border-radius: 40px;
     overflow: clip;
-    font-size: clamp(31px, 5vw, 55px);
+    font-size: clamp(40px, 7vw, 55px);
     transition:  0.3s ease, box-shadow 0.3s ease;
 }
 .projectbox a{
@@ -504,8 +514,8 @@
     margin-bottom: 10px;
 }
 .projdivheader h4{
-    font-size: clamp(11px, 3vw, 25px);
-    color: white;
+    font-size: clamp(14px, 4vw, 25px);
+    color: #dbdbdb;
 }
 .projectbox img{
     height: auto;
@@ -577,6 +587,8 @@
 }
 .dot.active, .dot:hover {
     background-color: #707070;
+    transform: scale(1.12);
+
 }
 .fade {
     animation-name: fade;
@@ -589,6 +601,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center ;
+
     }
     .projectbox img{
         width: clamp(220px, 85vw, 800px);
@@ -639,7 +652,7 @@
     height: 800px;
     background: black;
     flex-direction: column;
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial", sans-serif;
     font-size: 50px;
 }
@@ -657,7 +670,7 @@
     height: 800px;
     background: rebeccapurple;
     flex-direction: column;
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial MT", sans-serif;
     font-size: 50px;
 }
@@ -669,7 +682,7 @@
     height: 800px;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #dbdbdb;
     font-family: "Arial MT", sans-serif;
     font-size: 30px;
     background-color: black;
