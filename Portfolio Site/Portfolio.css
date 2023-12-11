@@ -513,11 +513,11 @@
     border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px;
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7); /* Adjust the color and transparency */
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
 .projectbox img:hover{
-    transform: scale(1,03);
+    transform: scale(1.01);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -590,8 +590,8 @@
         flex-direction: column;
         justify-content: center ;
     }
-    #cookieclicker img{
-        width: clamp(220px, 75vw, 800px);
+    .projectbox img{
+        width: clamp(220px, 85vw, 800px);
 
     }
 }
@@ -599,8 +599,21 @@
 
 @media screen and   (max-width: 550px)
 {
-    #cookieclicker img{
-        width: clamp(220px, 65vw, 800px);
+    .projectbox img{
+        width: clamp(220px, 82vw, 800px);
+
+    }
+}
+@media screen and (max-width: 400px)
+{
+    #selfie{
+        width: clamp(180px, 75vw, 1000px);
+    }
+}
+@media screen and   (max-width: 350px)
+{
+    .projectbox img{
+        width: clamp(220px, 75vw, 800px);
 
     }
 }
