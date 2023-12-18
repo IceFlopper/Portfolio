@@ -138,8 +138,11 @@
 #menu-list{
     list-style: none;
     display: none;
-    padding: 25px 10px 10px 10px;
-
+    padding: 25px 5px 5px 5px;
+    margin-top: 20px;
+}
+#menu-list li{
+    margin: 5px;
 }
 #more-menu-list:hover #menu-list {
     display: flex;
@@ -147,9 +150,12 @@
     position: absolute;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-
 }
+#more-menu-li{
+    display: flex;
+    flex-direction: row;
+}
+
 #more-menu {
     cursor: pointer;
 
@@ -383,6 +389,7 @@
     border-radius: 20px;
     padding: 10px;
 }
+
 .cvdiv header{
     font-size: 40px;
 }
@@ -444,7 +451,7 @@
 }
 .box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -503,19 +510,44 @@
 
 }
 
-#cookieclicker{
-
-}
 .projdivheader{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin: 10px;
+
+}
+.projdivheader header{
+    margin-left: 10px;
 }
 .projdivheader h4{
     font-size: clamp(14px, 4vw, 25px);
     color: #dbdbdb;
+    margin: 10px;
+}
+table{
+    color: #dbdbdb;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 5px #edaf53;
+    margin: 30px 10px 10px 10px;
+    font-family: Arial, sans-serif;
+
+}
+th, td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}
+td{
+   font-size: 22px;
+}
+.tablediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .projectbox img{
     height: auto;
@@ -526,6 +558,7 @@
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
+
 .projectbox img:hover{
     transform: scale(1.01);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -549,10 +582,10 @@
     user-select: none;
 }
 .prev{
-
+    padding-left: 25px;
 }
 .next{
-
+    padding-right: 25px;
 }
 .prev:hover {
     background-color: rgba(0,0,0,0.8);
@@ -595,7 +628,7 @@
     animation-duration: 1.5s;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1050px)
 {
     .projectbox{
         display: flex;
@@ -606,6 +639,10 @@
     .projectbox img{
         width: clamp(220px, 85vw, 800px);
 
+    }
+    a{
+        padding: 10px;
+        margin: -10px;
     }
 }
 
