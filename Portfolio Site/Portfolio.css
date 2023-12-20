@@ -558,8 +558,22 @@ td{
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
+.projectbox video{
+    height: auto;
+    width: clamp(550px, 60vw, 1000px);
+    border-radius: 2vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
+
+}
 
 .projectbox img:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.projectbox video:hover{
     transform: scale(1.01);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -628,78 +642,30 @@ td{
     animation-duration: 1.5s;
 }
 
-@media screen and (max-width: 1050px)
-{
-    .projectbox{
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
 
-    }
-    .projectbox img{
-        width: clamp(220px, 85vw, 800px);
-
-    }
-    a{
-        padding: 10px;
-        margin: -10px;
-    }
-}
-
-
-@media screen and   (max-width: 550px)
-{
-    .projectbox img{
-        width: clamp(220px, 82vw, 800px);
-
-    }
-}
-@media screen and (max-width: 400px)
-{
-    #selfie{
-        width: clamp(180px, 75vw, 1000px);
-    }
-}
-@media screen and   (max-width: 350px)
-{
-    .projectbox img{
-        width: clamp(220px, 75vw, 800px);
-
-    }
-}
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-@media screen and (max-width: 800px){
-    #image-header{
-        flex-direction: column;
-        align-items: center;
-
-    }
-    #selfie{
-        margin-left: 0;
-    }
-    .box{
-        flex-direction: column ;
-    }
-}
 #sectionMotivation{
     display: flex;
-    height: 800px;
+    height: auto;
     background: black;
     flex-direction: column;
     color: #dbdbdb;
     font-family: "Arial", sans-serif;
     font-size: 50px;
+    align-items: center;
 }
 #motivationHeader{
     font-size: 40px;
-    margin: 20px;
+    margin: 60px 20px 20px 20px;
+    width: 80%;
 }
 #motivationText{
     font-size: 20px;
-    margin-left: 20px;
+    margin: 20px;
+    width: 80%;
+    padding-bottom: 50px;
+}
+#motivationText h4{
+    margin: 20px 0 20px 0;
 }
 
 #sectionIdeas{
@@ -716,9 +682,10 @@ td{
 }
 #sectionForm{
     display: flex;
-    height: 800px;
+    height: auto;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #dbdbdb;
     font-family: "Arial MT", sans-serif;
     font-size: 30px;
@@ -727,15 +694,20 @@ td{
 #sectionForm form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     padding: 50px;
+    justify-content: space-evenly;
 }
 #formInfo{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-#formdiv label,input{
+#formdiv input{
+    margin-top: -10px;
+}
+#formdiv2 input{
+    margin-top: -10px;
 }
 #messageBox{
     display: flex;
@@ -760,20 +732,35 @@ td{
 #message {
     resize: vertical;
     height: 150px;
-    width: 80%;
+    width: 80vw;
+    margin-top: 20px;
 }
 #submitbox{
     margin-top: 10px;
-    background-color: orange; /* Set the background color */
-    color: black; /* Set the text color */
-    padding: 10px 15px; /* Set padding for the button */
-    font-size: 16px; /* Set the font size */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.formdiv{
+#formdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
+    justify-content: center;
+}
+#formdiv2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+
 }
 
 footer{
@@ -791,4 +778,72 @@ footer{
 }
 #additionalinfo{
 
+}
+@media screen and (max-width: 1050px)
+{
+    .projectbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+
+    }
+    .projectbox img{
+        width: clamp(220px, 85vw, 800px);
+
+    }
+    .projectbox video{
+        width: clamp(220px, 85vw, 800px);
+
+    }
+    a{
+        padding: 10px;
+        margin: -10px;
+    }
+}
+@media screen and (max-width: 800px){
+    #image-header{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #selfie{
+        margin-left: 0;
+    }
+    .box{
+        flex-direction: column ;
+    }
+    #formInfo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and   (max-width: 550px)
+{
+    .projectbox img{
+        width: clamp(220px, 82vw, 800px);
+
+    }
+    .projectbox video{
+        width: clamp(220px, 82vw, 800px);
+
+    }
+}
+@media screen and (max-width: 400px)
+{
+    #selfie{
+        width: clamp(180px, 75vw, 1000px);
+    }
+}
+@media screen and   (max-width: 350px)
+{
+    .projectbox img{
+        width: clamp(220px, 75vw, 800px);
+
+    }
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
