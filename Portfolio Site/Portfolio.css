@@ -378,6 +378,7 @@
     font-family: "Arial Rounded MT", sans-serif;
     margin: 20px;
     flex-direction: column;
+
 }
 .cvdiv{
     display: flex;
@@ -388,6 +389,7 @@
     min-height: 300px;
     border-radius: 20px;
     padding: 10px;
+
 }
 
 .cvdiv header{
@@ -468,8 +470,9 @@
 #projHeader{
     justify-content: flex-start;
     align-items: center;
-    margin: 12px 50px 0 50px;
+    margin: 35px 70px 0 70px;
     font-size: clamp(41px, 5vw, 55px);
+    font-family: Arial, sans-serif;
 
 
 }
@@ -516,6 +519,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 10px;
+
 
 }
 .projdivheader header{
@@ -603,12 +607,12 @@ td{
 }
 .prev:hover {
     background-color: rgba(0,0,0,0.8);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     color: orange;
 }
 .next:hover{
     background-color: rgba(0,0,0,0.8);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
     color: orange;
 }
 #dots{
@@ -670,15 +674,37 @@ td{
 
 #sectionIdeas{
     display: flex;
-    height: 800px;
+    height: auto;
     background: rebeccapurple;
     flex-direction: column;
     color: #dbdbdb;
-    font-family: "Arial MT", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 50px;
+    justify-content: center;
+    align-items: center;
 }
 #ideasheader{
     margin: 20px;
+    width: 80%;
+    font-size: 40px;
+    padding: 40px 0 20px 0;
+}
+#ideasheader h4{
+    font-size: 20px;
+
+}
+.IdeaDiv{
+    margin: 20px;
+    width: 80%;
+}
+.IdeaDiv h2{
+    font-size: 30px;
+}
+.IdeaDiv p{
+    font-size: 20px;
+}
+.whitespace{
+    height: 60px;
 }
 #sectionForm{
     display: flex;
@@ -705,9 +731,11 @@ td{
 }
 #formdiv input{
     margin-top: -10px;
+    width: 80%;
 }
 #formdiv2 input{
     margin-top: -10px;
+    width: 80%;
 }
 #messageBox{
     display: flex;
@@ -774,10 +802,19 @@ footer{
     font-family: Arial, sans-serif;
 }
 #copyright{
-
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
 }
 #additionalinfo{
-
+    display: flex;
+    flex-direction: row;
+}
+#copyright h4{
+    margin: 5px;
+}
+#additionalinfo h4{
+    margin: 5px;
 }
 @media screen and (max-width: 1050px)
 {
@@ -816,6 +853,22 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #copyright{
+        flex-direction: column;
+        padding: 2px;
+
+    }
+    #additionalinfo {
+        flex-direction: column;
+        padding: 2px;
+
+    }
+    #copyright h4{
+        margin: 2px;
+    }
+    #additionalinfo h4{
+        margin: 2px;
     }
 }
 
