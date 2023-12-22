@@ -46,17 +46,17 @@
     color: black;
 }
 #ulNavigation a:hover {
-    color: #0da89e;
+    color: #ADB2D3;
     font-size: 23px;
     transition: 0.3s ease-in-out ;
 }
 #more-menu a:hover{
-    color: #0da89e;
+    color: #ADB2D3;
     font-size: 23px;
     transition: 0.3s ease-in-out ;
 }
 #RightSide a:hover{
-    color: #0da89e;
+    color: #ADB2D3;
     font-size: 17px;
     transition: 0.3s ease-in-out ;
 }
@@ -65,7 +65,7 @@
 
 #SectionHome {
     height: auto    ;
-    background-color: orange;
+    background-color: #A27C92;
 
 
 }
