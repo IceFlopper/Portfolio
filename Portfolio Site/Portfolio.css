@@ -519,7 +519,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     width: 50%;
 
 
@@ -541,7 +541,7 @@ table{
     font-size: 30px;
     border-radius: 5px;
     border: 5px #9C7CA5;
-    margin: 30px 10px 10px 10px;
+    margin: 15px 10px 0 10px;
     font-family: Arial, sans-serif;
 
 }
@@ -561,7 +561,7 @@ td{
 }
 .projectbox img{
     height: auto;
-    width: clamp(500px, 76vw, 1200px);
+    width: clamp(500px, 67vw, 1200px);
     border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px;
@@ -570,10 +570,10 @@ td{
 }
 .projectbox video{
     height: auto;
-    width: clamp(500px, 74vw, 1200px);
+    width: clamp(500px, 67vw, 1200px);
     border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px;
+    margin: 10px 0 0 0;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
@@ -739,9 +739,20 @@ td{
 #sectionForm form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     padding: 50px;
     justify-content: space-evenly;
+    border: 2px solid #9C7CA5;
+    border-radius: 3vw;
+    margin: 100px;
+
+
+}
+#sectionForm form input{
+    border-radius: 0.5vw;
+    height: 40px;
+    background-color: black;
+    width: 300px;
 }
 #formInfo{
     display: flex;
@@ -750,62 +761,72 @@ td{
 }
 #formdiv input{
     margin-top: -10px;
-    width: 80%;
 }
 #formdiv2 input{
     margin-top: -10px;
-    width: 80%;
 }
 #messageBox{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 30px;
 
 }
 #subject{
-    width: 50%;
 
 }
 #messageBox label[for="subject"]{
-    margin-top: 15px;
-    margin-bottom: -10px;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 #messageBox label[for="message"]{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 #message {
     resize: vertical;
     height: 150px;
-    width: 80vw;
+    width: 100%;
     margin-top: 20px;
+    border-radius: 0.5vw;
+    background-color: black;
+}
+#submitboxdiv{
+    width: 100%;
+    justify-content: center;
 }
 #submitbox{
-    margin-top: 10px;
-    background-color: orange;
+    margin-top: 20px;
+    background-color: #9C7CA5 !important;
     color: black;
     padding: 10px 15px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: ease 0.3s;
+    width: 100px !important;
+
+}
+#submitbox:hover{
+    background-color: #ADB2D3 !important;
+    transition: ease 0.3s;
 }
 #formdiv{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 #formdiv2{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
-    margin-top: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
 
 }
@@ -856,6 +877,19 @@ footer{
         padding: 10px;
         margin: -10px;
     }
+    #formInfo{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #formdiv{
+        width: 100%;
+    }
+    #formdiv2{
+        width: 100%;
+        margin-top: 20px;
+    }
+
 }
 @media screen and (max-width: 800px){
     #image-header{
@@ -864,7 +898,7 @@ footer{
 
     }
     #header-text{
-        margin: 0 12vw 100px 12vw;
+        margin: 0 12vw 60px 12vw;
         justify-content: flex-start;
     }
     #header-text header{
@@ -879,11 +913,6 @@ footer{
 
     .box{
         flex-direction: column ;
-    }
-    #formInfo{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     #copyright{
         flex-direction: column;
@@ -908,6 +937,18 @@ footer{
         width: 100%;
 
     }
+    .projectbox video{
+        margin: 10px;
+    }
+    .videodiv{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .projectbox{
+        justify-content: flex-start;
+        min-height: 400px;
+    }
+
 }
 
 @media screen and   (max-width: 550px)
@@ -919,6 +960,15 @@ footer{
     .projectbox video{
         width: clamp(200px, 66vw, 800px);
 
+    }
+    #sectionForm form{
+        padding: 20px;
+    }
+    #sectionForm form input{
+        border-radius: 0.5vw;
+        height: 40px;
+        background-color: black;
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px)
