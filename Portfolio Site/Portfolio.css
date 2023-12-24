@@ -389,7 +389,7 @@
     border-radius: 20px;
     padding: 10px;
 
-    background: linear-gradient(#28212e, #3a3042)  ;
+    background: black  ;
     border: solid 2px #9C7CA5;
 
 
@@ -506,7 +506,7 @@
     overflow: clip;
     font-size: clamp(40px, 7vw, 55px);
     transition:  0.3s ease, box-shadow 0.3s ease;
-    border: solid 8px #9C7CA5;
+    border: solid 6px #9C7CA5;
     box-shadow: 0 0 20px 3px #3a3042 ;
 }
 .projectbox a{
