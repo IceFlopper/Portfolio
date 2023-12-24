@@ -588,6 +588,9 @@ td{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+.projbox{
+    display: none;
+}
 #portfolio{
     display: none;
 }
@@ -838,7 +841,7 @@ footer{
     align-items: center;
     color: black;
     background-color: white;
-    height: 50px;
+    height: auto;
     font-family: Arial, sans-serif;
 }
 #copyright{
@@ -948,6 +951,37 @@ footer{
         justify-content: flex-start;
         min-height: 400px;
     }
+    .projbox{
+        display: flex;
+        color: #dbdbdb;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .projboxsubtext{
+        display: flex;
+        flex-direction: row;
+    }
+    .projboxsubtextleft{
+        font-size: 15px;
+        width: 50%;
+        text-align: center;
+    }
+    .projboxsubtextright{
+        font-size: 15px;
+        width: 50%;
+        text-align: center;
+
+
+    }
+    .projboxsubtextleft h5{
+        margin: 5px;
+    }
+    .projboxsubtextright h5{
+        margin: 5px;
+
+    }
+
 
 }
 
