@@ -391,6 +391,14 @@
 
     background: black  ;
     border: solid 2px #9C7CA5;
+    transition:  0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.cvdiv:hover{
+    box-shadow: 0 0 20px 3px #3a3042 ;
+    transition:  0.2s ease, box-shadow 0.2s ease;
+
 
 
 }
@@ -509,6 +517,10 @@
     border: solid 6px #9C7CA5;
     box-shadow: 0 0 20px 3px #3a3042 ;
 }
+.projectbox:hover{
+    box-shadow: 0 0 20px 5px #3a3042 ;
+
+}
 .projectbox a{
     color: #9C7CA5;
     text-decoration: none;
@@ -569,19 +581,15 @@ td{
 .projectbox img{
     height: auto;
     width: clamp(500px, 67vw, 1200px);
-    border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px;
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
 .projectbox video{
     height: auto;
     width: clamp(500px, 67vw, 1200px);
-    border-radius: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px 0 0 0;
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 
 }
 
@@ -687,6 +695,13 @@ td{
     width: 80%;
     padding: 20px 20px 50px 20px;
     background-color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+#motivationText:hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0 0 20px 3px #3a3042 ;
 }
 #motivationText h4{
     margin: 20px 0 20px 0;
@@ -721,6 +736,11 @@ td{
     padding: 20px 20px 50px 20px;
     margin-bottom: 200px;
 
+}
+#ideatext:hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0 0 20px 3px #3a3042 ;
 }
 .IdeaDiv{
     width: 80%;
