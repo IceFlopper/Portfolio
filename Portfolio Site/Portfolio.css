@@ -386,7 +386,7 @@
     margin: 10px 10px 10px 10px;
     width: 100%;
     min-height: 300px;
-    border-radius: 20px;
+    border-radius: 1.5vw;
     padding: 10px;
 
     background: black  ;
@@ -467,17 +467,24 @@
     display: flex;
     justify-content: space-evenly;
 }
-#bottomBoxCV{
+#logboek-header{
+    margin: 20px;
+}
+#bottom-box-cv{
 
 }
-.compDiv{
+.comp-div{
     margin: 25px;
     text-align: left;
 }
-.compDiv h4{
+.comp-div h4{
     margin-top: 10px;
+    font-family: Arial, sans-serif;
 }
-.compDivBox{
+#comp-div-small{
+    width: 265.8px;
+}
+.comp-div-box{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -522,7 +529,6 @@
     width: 80%;
 
 }
-
 .projectbox{
     display: flex ;
     flex-direction: column;
@@ -694,7 +700,7 @@ td{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.infoBoxDiv{
+.info-box-div{
     display: flex;
     flex-direction: column;
 
@@ -708,15 +714,15 @@ td{
     border: solid 2px #9C7CA5;
     transition:  0.2s ease, box-shadow 0.2s ease;
 }
-.infoBoxDiv:hover{
+.info-box-div:hover{
     box-shadow: 0 0 20px 3px #3a3042 ;
     transition:  0.2s ease, box-shadow 0.2s ease;
 }
-.infoBoxDiv h4{
+.info-box-div h4{
     font-size: 25px;
     margin: 15px;
 }
-.infoBoxDiv header{
+.info-box-div header{
     margin: 15px;
 }
 
